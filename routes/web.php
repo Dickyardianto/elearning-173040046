@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/about', function () {
+    $nama = 'Dicky Ardianto';
+    return view('about', ['nama' => $nama]);
+});
